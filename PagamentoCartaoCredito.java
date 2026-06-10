@@ -1,4 +1,4 @@
-public class PagamentoCartaoCredito implements Pagamento {
+public class PagamentoCartaoCredito  {
     private String numeroCartao;
     private String nomeTitular;
     private String dataValidade;
@@ -11,7 +11,7 @@ public class PagamentoCartaoCredito implements Pagamento {
         this.codigoSeguranca = codigoSeguranca;
     }
 
-    @Override
+   
     public void processarPagamento(double valor) {
         // Lógica para processar o pagamento com cartão de crédito
         System.out.println("Processando pagamento de R$ " + valor + " com cartão de crédito.");
