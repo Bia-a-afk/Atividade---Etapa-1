@@ -1,9 +1,15 @@
 import java.util.Scanner;
 
 public class Pagamento {
-	
+    
+
 	public static void main(String[] args) {
 		Scanner entrada = new Scanner(System.in);
+		PagamentoBoleto realizar1 = new PagamentoBoleto();
+	    double valorBoleto;
+    	PagamentoCartaoCredito realizar2 = new PagamentoCartaoCredito();
+	    double valorCartaoCredito;
+		
    /* private double valor;
     private String metodoPagamento;
 
@@ -34,18 +40,18 @@ public class Pagamento {
     System.out.println("Pagamento via boleto selecionado.\n");
 
     System.out.print("Valor a ser pago: R$ ");
-    double valorBoleto = entrada.nextDouble();
-
-    System.out.println("Processando pagamento via boleto no valor de: "+ valorBoleto);
+    valorBoleto = entrada.nextDouble();
+    
+    realizar1.setPagamentoBoleto(valorBoleto);
     // Lógica para processar o pagamento via boleto
 
     //Cartão de Crédito
     System.out.println("Pagamento via cartão de crédito selecionado.\n");
 
     System.out.print("Valor a ser pago: R$ ");
-    double valorCartao = entrada.nextDouble();
+    valorCartaoCredito = entrada.nextDouble();
 
-    System.out.println("Processando pagamento via cartão de crédito no valor de: "+ valorCartao);
+    realizar2.setPagamentoCartaoCredito(valorCartaoCredito);
     // Lógica para processar o pagamento via cartão de crédito
 }
 }
