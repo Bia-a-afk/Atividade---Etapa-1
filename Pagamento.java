@@ -7,7 +7,7 @@ public class Pagamento {
 		Scanner entrada = new Scanner(System.in);
 		PagamentoBoleto realizar1 = new PagamentoBoleto();
 	    double valorBoleto;
-    	PagamentoCartaoCredito realizar2 = new PagamentoCartaoCredito();
+    	PagamentoCartaoCredito realizar2 = new PagamentoCartaoCredito(0);
 	    double valorCartaoCredito;
 		
    /* private double valor;
